@@ -1,1 +1,11 @@
 python-dotenv
+
+# Commanmds to install the required packages
+
+# !nvidia-smi
+# !pip install diffusers==0.11.1
+# !pip install transformers scipy ftfy accelerate
+
+import torch
+from diffusers import StableDiffusionPipeline
+from PIL import Image
