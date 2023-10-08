@@ -9,3 +9,5 @@ python-dotenv
 import torch
 from diffusers import StableDiffusionPipeline
 from PIL import Image
+streamlit
+google-generativeai
