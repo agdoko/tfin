@@ -1,16 +1,13 @@
-import streamlit as st
+import os
 import google.generativeai as palm
 
-# Set the title of your Streamlit app
-st.title("Meme from Text Creator")
-
 # Configure api key authentication
-palm.configure(api_key=st.secrets["PALM_API_KEY"])
+palm.configure(api_key=os.getenv("PALM_API_KEY"))
 
 # Get a list of available models, print one
 models = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods]
 model = models[0].name
-st.write(model)
+print(model)
 
 #TODO: Add a text input field and move the code below into the button
 
@@ -34,13 +31,4 @@ completion = palm.generate_text(
     # The maximum length of the response
     max_output_tokens=800,
 )
-
-st.write(completion.result)
-####
-
-# Add a button to initiate meme generation
-if st.button("Create Meme"):
-    pass
-
-else:
-    st.write("Please write something")
+print(completion.result)
