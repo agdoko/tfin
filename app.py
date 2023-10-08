@@ -19,10 +19,7 @@ You are an expert at solving word problems.
 
 Solve the following problem:
 
-I have three houses, each with three cats.
-each cat owns 4 mittens, and a hat. Each mitten was
-knit from 7m of yarn, each hat from 4m.
-How much yarn was needed to make all the items?
+Tell me a funny joke about a cafe that is very full at the start of busines at 10am on a Sunday morning.
 
 Think about it step by step, and show your work.
 """
